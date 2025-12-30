@@ -1,235 +1,289 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-  <link href="src/output.css" rel="stylesheet">
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
 
-<body class="bg-gray-100">
+  <body class="bg-gray-100">
+    <!-- HEADER -->
+    <div class="flex items-center justify-between px-6 py-6 bg-white">
+      <div class="flex items-center gap-2">
+        <img src="images/logo-symbol.png" class="h-10" />
+        <p class="font-bold text-3xl text-blue-600">Brand</p>
+      </div>
+      <img src="images/Actions.png" />
+    </div>
 
-<!-- HEADER -->
-<div class="flex items-center justify-between px-6 py-6 bg-white">
-  <div class="flex items-center gap-2">
-    <img src="images/logo-symbol.png" class="h-10">
-    <p class="font-bold text-3xl text-blue-600">Brand</p>
-  </div>
-  <img src="images/Actions.png">
-</div>
+    <!-- TITLE -->
+    <div class="p-5 bg-gray-200">
+      <h2 class="text-3xl font-bold">My Cart</h2>
+    </div>
 
-<!-- TITLE -->
-<div class="p-5 bg-gray-200">
-  <h2 class="text-3xl font-bold">My Cart</h2>
-</div>
+    <!-- MAIN CONTENT -->
+    <div class="flex gap-6 p-15">
+      <!-- LEFT: PRODUCT CARD -->
+      <div class="bg-white p-6 rounded-2xl flex flex-col w-full">
+        <!-- TOP ROW -->
+        <div class="flex">
+          <img src="images/img-group.png" class="h-20" />
 
-<!-- MAIN CONTENT -->
-<div class="flex gap-6 p-15">
+          <div class="flex-1 px-6">
+            <p class="font-medium">
+              T-shirts with multiple color, for men and lady
+            </p>
+            <p class="text-gray-400">
+              Size: medium, color: blue, material: plastic
+            </p>
+            <p class="text-gray-400">Seller: Alert Market</p>
 
-  <!-- LEFT: PRODUCT CARD -->
-  <div class="bg-white p-6 rounded-2xl flex flex-col w-full">
+            <!-- BUTTONS -->
+            <div class="flex gap-6 py-5">
+              <button class="border px-3 py-2 rounded text-red-400">
+                Remove
+              </button>
+              <button class="border px-3 py-2 rounded text-blue-400">
+                Save for later
+              </button>
+            </div>
+          </div>
+        </div>
 
-    <!-- TOP ROW -->
-    <div class="flex">
+        <!-- BOTTOM (BELOW, NOT SIDE) -->
+        <hr class="my-4 border-gray-300" />
 
-      <img src="images/img-group.png" class="h-20">
+        <div class="flex">
+          <img src="images/img-group.png" class="h-20" />
 
-      <div class="flex-1 px-6">
-        <p class="font-medium">
-          T-shirts with multiple color, for men and lady
-        </p>
-        <p class="text-gray-400">
-          Size: medium, color: blue, material: plastic
-        </p>
-        <p class="text-gray-400">
-          Seller: Alert Market
-        </p>
+          <div class="flex-1 px-6">
+            <p class="font-medium">
+              T-shirts with multiple color, for men and lady
+            </p>
+            <p class="text-gray-400">
+              Size: medium, color: blue, material: plastic
+            </p>
+            <p class="text-gray-400">Seller: Alert Market</p>
 
-        <!-- BUTTONS -->
-        <div class="flex gap-6 py-5">
-          <button class="border px-3 py-2 rounded text-red-400">
-            Remove
+            <!-- BUTTONS -->
+            <div class="flex gap-6 py-5">
+              <button class="border px-3 py-2 rounded text-red-400">
+                Remove
+              </button>
+              <button class="border px-3 py-2 rounded text-blue-400">
+                Save for later
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-gray-300" />
+
+        <div class="flex">
+          <img src="images/img-group.png" class="h-20" />
+
+          <div class="flex-1 px-6">
+            <p class="font-medium">
+              T-shirts with multiple color, for men and lady
+            </p>
+            <p class="text-gray-400">
+              Size: medium, color: blue, material: plastic
+            </p>
+            <p class="text-gray-400">Seller: Alert Market</p>
+
+            <!-- BUTTONS -->
+            <div class="flex gap-6 py-5">
+              <button class="border px-3 py-2 rounded text-red-400">
+                Remove
+              </button>
+              <button class="border px-3 py-2 rounded text-blue-400">
+                Save for later
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4 border-gray-300" />
+
+        <div class="flex justify-between">
+          <button class="bg-blue-600 px-5 py-2 to-white rounded">
+            <i class="fa-solid fa-arrow-left"></i>Back to shop
           </button>
-          <button class="border px-3 py-2 rounded text-blue-400">
-            Save for later
+          <button class="px-5 border border-gray-300 rounded">
+            Remoev all
           </button>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mt-7 bg-gray-200 p-10 rounded">
+          <div class="flex items-center gap-5">
+            <i class="fa-solid fa-lock"></i>
+            <div>
+              <p class="font-medium">Secure payment</p>
+              <p class="text-gray-500">Have you ever finally just</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-5">
+            <i class="fa-solid fa-message"></i>
+            <div>
+              <p class="font-medium">Customer suport</p>
+              <p class="text-gray-500">Have you ever finally just</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-5">
+            <i class="fa-solid fa-car"></i>
+            <div>
+              <p class="font-medium">Free delivery</p>
+              <p class="text-gray-500">Have you ever finally just</p>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
+      <!-- RIGHT: SUMMARY -->
+      <div class="w-96 space-y-6">
+        <!-- COUPON -->
+        <div class="bg-white p-6 rounded">
+          <p class="mb-3">Have a coupon ?</p>
+          <div class="flex gap-2">
+            <input
+              class="border border-gray-300 p-2 rounded w-full"
+              type="text"
+              placeholder="Add coupon"
+            />
+            <button
+              class="border border-gray-300 p-2 rounded text-blue-500 font-medium"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
 
-    <!-- BOTTOM (BELOW, NOT SIDE) -->
-    <hr class="my-4 border-gray-300">
+        <!-- TOTAL -->
+        <div class="bg-white p-6 rounded space-y-3">
+          <div class="flex justify-between">
+            <span>Subtotal:</span>
+            <span>$1403.97</span>
+          </div>
 
+          <div class="flex justify-between">
+            <span>Discount:</span>
+            <span class="text-red-400">-$60.00</span>
+          </div>
 
-    <div class="flex">
+          <div class="flex justify-between">
+            <span>Tax:</span>
+            <span class="text-green-400">$14.00</span>
+          </div>
 
-      <img src="images/img-group.png" class="h-20">
+          <hr class="my-4 border-gray-300" />
 
-      <div class="flex-1 px-6">
-        <p class="font-medium">
-          T-shirts with multiple color, for men and lady
-        </p>
-        <p class="text-gray-400">
-          Size: medium, color: blue, material: plastic
-        </p>
-        <p class="text-gray-400">
-          Seller: Alert Market
-        </p>
+          <div class="flex justify-between font-bold">
+            <span>Total:</span>
+            <span>$1357.79</span>
+          </div>
 
-        <!-- BUTTONS -->
-        <div class="flex gap-6 py-5">
-          <button class="border px-3 py-2 rounded text-red-400">
-            Remove
-          </button>
-          <button class="border px-3 py-2 rounded text-blue-400">
-            Save for later
-          </button>
+          <div class="flex justify-center">
+            <button class="bg-green-500 text-white px-6 py-2 rounded w-full">
+              Checkout
+            </button>
+          </div>
         </div>
       </div>
-
     </div>
 
-    <hr class="my-4 border-gray-300">
-
-    <div class="flex">
-
-      <img src="images/img-group.png" class="h-20">
-
-      <div class="flex-1 px-6">
-        <p class="font-medium">
-          T-shirts with multiple color, for men and lady
-        </p>
-        <p class="text-gray-400">
-          Size: medium, color: blue, material: plastic
-        </p>
-        <p class="text-gray-400">
-          Seller: Alert Market
-        </p>
-
-        <!-- BUTTONS -->
-        <div class="flex gap-6 py-5">
-          <button class="border px-3 py-2 rounded text-red-400">
-            Remove
-          </button>
-          <button class="border px-3 py-2 rounded text-blue-400">
-            Save for later
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-    <hr class="my-4 border-gray-300">
-
-
-    <div class="flex justify-between">
-      <button class="bg-blue-600 px-5 py-2 to-white rounded"><i class="fa-solid fa-arrow-left"></i>Back to shop</button>
-      <button class="px-5 border border-gray-300 rounded">Remoev all</button>
-    </div>
-
-    <div class="grid grid-cols-3 gap-4 mt-7  bg-gray-200 p-10 rounded">
-      <div class="flex items-center gap-5">
-        <i class="fa-solid fa-lock"></i>
-        <div>
-          <p class="font-medium">Secure payment</p>
-        <p class="text-gray-500">Have you ever finally just</p>
-        </div>
-      </div>
-      <div class="flex items-center gap-5">
-      <i class="fa-solid fa-message"></i>
+    <div class="grid grid-cols-4 gap3 p-15 shadow-lg bg-white mx-15">
+      <!-- cart 1 -->
       <div>
-        <p class="font-medium">Customer suport</p>
-        <p class="text-gray-500">Have you ever finally just</p>
+        <img src="images/Item.png" />
       </div>
-    </div>
-    <div class="flex items-center gap-5">
-      <i class="fa-solid fa-car"></i>
       <div>
-        <p class="font-medium">Free delivery</p>
-      <p class="text-gray-500">Have you ever finally just</p>
+        <img src="images/Item1.png" />
       </div>
-    </div>
-    </div>
-    
-  </div>
 
-  <!-- RIGHT: SUMMARY -->
-  <div class="w-96 space-y-6">
-
-    <!-- COUPON -->
-    <div class="bg-white p-6 rounded">
-      <p class="mb-3">Have a coupon ?</p>
-      <div class="flex gap-2">
-        <input class="border border-gray-300 p-2 rounded w-full" type="text" placeholder="Add coupon">
-        <button class="border border-gray-300 p-2 rounded text-blue-500 font-medium">
-          Apply
-        </button>
+      <div>
+        <img src="images/Item2.png" />
       </div>
+
+      <div>
+        <img src="images/Item3.png" />
+      </div>
+
+      <div class="grid grid-cols-4 gap3"></div>
     </div>
 
-    <!-- TOTAL -->
-    <div class="bg-white p-6 rounded space-y-3">
-      <div class="flex justify-between">
-        <span>Subtotal:</span>
-        <span>$1403.97</span>
+    <div class="flex justify-between items-center bg-blue-500 p-10 mx-15 text-white rounded mt-10">
+      <div>
+        <p class="font-bold">Super discount on more than 100 USD</p>
+        <p class="text-gray-300">Have you ever finally just write dummy info</p>
       </div>
-
-      <div class="flex justify-between">
-        <span>Discount:</span>
-        <span class="text-red-400">-$60.00</span>
-      </div>
-
-      <div class="flex justify-between">
-        <span>Tax:</span>
-        <span class="text-green-400">$14.00</span>
-      </div>
-
-          <hr class="my-4 border-gray-300">
-
-      <div class="flex justify-between font-bold">
-        <span>Total:</span>
-        <span>$1357.79</span>
-      </div>
-
-      <div class="flex justify-center">
-        <button class="bg-green-500 text-white px-6 py-2 rounded w-full">
-          Checkout
-        </button>
+      <div>
+        <button class="bg-yellow-600 px-4 py-2 rounded">shop now</button>
       </div>
     </div>
+    <div class="grid grid-cols-6 gap-8 mt-20 p-15 bg-white">
+      <div class="flex flex-col">
+        <div class="flex items-center gap-3">
+          <img src="images/logo-symbol.png">
+        <p class="text-blue-400 font-bold text-3xl">Brand</p>
+      </div>
+        <div class="grid grid-cols-6 gap-8">
+  <div class="flex flex-col col-span-8">
+    <p class="text-gray-500">Best information about the cmpny</p>
+    <p class="text-gray-500">Best information about the cmpny</p>
 
   </div>
-
-
 </div>
 
-
-
-
-<div class="grid grid-cols-4 gap3 p-15">
-  <!-- cart 1 -->
-  <div>
-    <img src="images/Item.png">
-  </div>
-  <div>
-    <img src="images/Item1.png">
-  </div>
-
-  <div>
-    <img src="images/Item2.png">
-  </div>
-
-  <div>
-    <img src="images/Item3.png">
-  </div>
-
-  <div class="grid grid-cols-4 gap3">
-
-</div>
-</div>
-
-</body>
+        <div class="flex gap-x-5 mt-5">
+          <i class="fa-brands fa-facebook text-3xl text-gray-500"></i>
+          <i class="fa-brands fa-twitter  text-3xl text-gray-500"></i>
+          <i class="fa-brands fa-linkedin-in text-3xl text-gray-500"></i>
+          <i class="fa-brands fa-square-instagram  text-3xl text-gray-500"></i>
+          <i class="fa-brands fa-youtube  text-3xl text-gray-500"></i>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <a class="font-semibold">about</a>
+        <a class="text-gray-500">Abut us</a>
+        <a class="text-gray-500">Find store</a>
+        <a class="text-gray-500">Categories</a>
+        <a class="text-gray-500">blogs</a>
+        </a>
+      </div>
+       <div class="flex flex-col">
+        <a class="font-semibold">about</a>
+        <a class="text-gray-500">Abut us</a>
+        <a class="text-gray-500">Find store</a>
+        <a class="text-gray-500">Categories</a>
+        <a class="text-gray-500">blogs</a>
+        </a>
+      </div>
+       <div class="flex flex-col">
+        <a class="font-semibold">about</a>
+        <a class="text-gray-500">Abut us</a>
+        <a class="text-gray-500">Find store</a>
+        <a class="text-gray-500">Categories</a>
+        <a class="text-gray-500">blogs</a>
+        </a>
+      </div>
+       <div class="flex flex-col">
+        <a class="font-semibold">about</a>
+        <a class="text-gray-500">Abut us</a>
+        <a class="text-gray-500">Find store</a>
+        <a class="text-gray-500">Categories</a>
+        <a class="text-gray-500">blogs</a>
+        </a>
+      </div>
+       <div class="flex flex-col">
+        <a class="font-semibold">about</a>
+        <img src="images/Group1.png" class="w-30 my-1">
+        <img src="images/Group1.png" class="w-30 my-1">
+        </div>
+    </div>
+  </body>
 </html>
