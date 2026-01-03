@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* tailwind.css or your custom file */
+.padding {
+  @apply max-w-7xl mx-auto px-8; 
+}
