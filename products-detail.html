@@ -8,41 +8,46 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link href="src/output.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Products Detail</title>
   </head>
-<body>
-    <div class="mx-36">
-        <div class="flex justify-between py-3 items-center px-35 bg-white">
+  <body class="bg-gray-300">
+    <!-- Header -->
+    <div class="flex justify-between py-3 items-center px-35 bg-white">
       <div class="flex items-center">
-        <img src="./images/logo-symbol.png" alt="#" />
+        <img src="./images/logo-symbol.png" alt="logo" />
         <p class="font-bold text-3xl text-blue-400 px-3">Brand</p>
       </div>
+
       <div
         class="flex bg-blue-400 w-1/2 border border-blue-400 border-2 rounded"
       >
-        <div class="flex items-center bg-white">
+        <div class="flex items-center bg-white w-full">
           <input
             type="text"
             placeholder="Search"
-            class="border border-blue-300 w-95 p-2 text-gray-400"
+            class="border border-blue-300 w-95 p-2 text-gray-300"
           />
-          <button class="gap-x-2">All Categories</button>
+          <button
+            class="sm:flex items-center gap-1 text-sm text-gray-300 whitespace-nowrap px-2"
+          >
+            All Categories
+          </button>
           <p><i class="fa-solid fa-angle-down"></i></p>
         </div>
-        <button class="text-white pl-5 font-bold">Serch</button>
+        <button class="text-white pl-5 font-bold">Search</button>
       </div>
+
       <div>
-        <img src="./images/Actions.png" alt="" />
+        <img src="./images/Actions.png" alt="actions" />
       </div>
     </div>
+
+    <!-- Secondary nav -->
     <div
-      class="flex px-35 justify-end border border-gray-400 p-3 mt-3 items-center font-bold rounded bg-white"
+      class="flex px-35 justify-end border border-gray-300 p-3 mt-3 items-center font-bold rounded bg-white"
     >
       <div class="flex gap-7">
-        <a href="#">
-          <i class="fa-solid fa-bars"></i>
-          All Categories</a
-        >
+        <a href="#"><i class="fa-solid fa-bars"></i> All Categories</a>
         <a href="#">Hot offers</a>
         <a href="#">Gift boxes</a>
         <a href="#">Projects</a>
@@ -55,6 +60,243 @@
         <a href="#">Ship to <i class="fa-solid fa-angle-down"></i></a>
       </div>
     </div>
+
+    <!-- 3-column section: left, middle (wider), right -->
+    <div class="px-35">
+      <div
+        class="bg-white shadow-lg rounded p-5 mt-5 grid gap-6 border border-gray-300 border-1"
+        style="grid-template-columns: 1fr 3fr 1fr"
+      >
+        <!-- Left column (categories) -->
+        <div class="flex mt-4">
+          <div class="space-y-4">
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full text-white text-xl"
+              >
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <span class="bg-blue-400 px-5 py-2 rounded">Automobiles</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Clothes and wear</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Home interiors</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Computer and tech</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Tools, equipments</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Sports and outdoor</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Animal and pets</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>Machinery tools</span>
+            </a>
+            <a href="#" class="flex items-center gap-3">
+              <span
+                class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-300 text-white text-xl"
+              >
+              </span>
+              <span>More category</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle column (wider) with responsive banner -->
+        <div class="flex">
+          <div
+            class="border-4 border-red-500 flex items-center"
+            style="
+              background-image: url('./images/Banner-board.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 100%;
+              height: 420px;
+            "
+          >
+            <div
+              class="flex flex-col items-start justify-start bg-white/30 px-4 py-2 rounded mb-20"
+            >
+              <h1 class="text-2xl font-bold">Latest trending</h1>
+              <h2 class="text-3xl font-bold">Electronic items</h2>
+              <button class="mt-3 px-4 py-2 bg-white text-black rounded">
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="flex flex-col mt-4">
+          <div class="gap-x-3 justify-center bg-blue-400 p-3 rounded">
+            <div class="flex">
+              <div
+                class="w-20 h-15 rounded-full bg-gray-300 flex items-center justify-center"
+              >
+                <i class="fa-regular fa-user text-gray-300 text-3xl"></i>
+              </div>
+              <div class="flex flex-col px-3 w-32 sm:w-40">
+                <p class="whitespace-normal">Hi, user</p>
+                <p class="whitespace-normal">let’s get started</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-3">
+              <button class="px-4 py-2 bg-blue-500 text-white rounded">
+                Join Now
+              </button>
+              <button class="px-4 py-2 bg-white border rounded">Log in</button>
+            </div>
+            <div>
+              
+            </div>
+          </div>
+
+           <div class="flex flex-col bg-blue-400 mt-2 justify-center items-center p-3 rounded text-white font-semibold">
+             <p class="">Get US $10 off</p>
+             <p>with a new</p>
+             <p>supplier</p>
+             
+            </div>
+
+            <div class="flex flex-col bg-blue-400 mt-2 justify-center items-center p-3 rounded text-white font-semibold">
+             <p class="">Get US $10 off</p>
+             <p>with a new</p>
+             <p>supplier</p>
+             
+            </div>
+
+        </div>
+      </div>
+      <div class="flex border border-gray-300 mt-5 rounded shadow-lg">
+        <!-- 1 st card satr hare -->
+        <div class="flex flex-col p-5 border border-gray-300 items-center">
+        <div class="p-3">
+          <p class="text-2xl font-bold">Deals and offers</p>
+          <p>Hygiene equipments</p>
+        </div>
+        <div class="flex gap-x-3 justify-between">
+          <div class="flex flex-col w-12 h-12 bg-gray-400 px-7 py-1 border border-gray-300 items-center rounded text-white border border-gray-300 border-1 font-bold text-1xl">
+            <p>04</p>
+            <p>Days</p>
+          </div>
+          <div class="flex flex-col w-12 h-12 bg-gray-400 px-7 py-1 border border-gray-300 items-center rounded text-white border border-gray-300 border-1 font-bold text-1xl">
+            <p>13</p>
+            <p>Hours</p>
+          </div>
+          <div class="flex flex-col w-12 h-12 bg-gray-400 px-7 py-1 border border-gray-300 items-center rounded text-white border border-gray-300 border-1 font-bold text-1xl">
+            <p>34</p>
+            <p>Min</p>
+          </div>
+          <div class="flex flex-col w-12 h-12 bg-gray-400 px-7 py-1 border border-gray-300 items-center rounded text-white border border-gray-300 border-1 font-bold text-1xl">
+            <p>56</p>
+            <p>Sec</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="p-5 border border-gray-300 items-center">
+          <img src="./images/img.png" alt="">
+          <div class="flex flex-col justify-center items-center">
+            <p>Smart watches</p>
+          <button class="bg-red-600">-25%</button>
+          </div>
+        </div>
+
+        <div class="p-5 border border-gray-300 items-center">
+          <img src="./images/img.png" alt="">
+          <div class="flex flex-col justify-center items-center">
+            <p>Smart watches</p>
+          <button class="bg-red-600">-25%</button>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center p-5 border border-gray-300 items-center">
+          <img src="./images/img.png" alt="">
+          <div class="flex flex-col justify-center items-center">
+            <p>Smart watches</p>
+          <button class="bg-red-600">-25%</button>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center p-5 border border-gray-300 items-center">
+          <img src="./images/img.png" alt="">
+          <div class="flex flex-col justify-center items-center">
+            <p>Smart watches</p>
+          <button class="bg-red-600">-25%</button>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center p-5 border border-gray-300 items-center">
+          <img src="./images/img.png" alt="">
+          <div class="flex flex-col justify-center items-center">
+            <p>Smart watches</p>
+          <button class="bg-red-600">-25%</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- <div> -->
+        <div class="flex mt-5">
+          <div class="flex">
+          <div
+            class="border-4 border-red-500 flex items-center"
+            style="
+              background-image: url('./images/Banner-board.png');
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+              width: 100%;
+              height: 420px;
+            "
+          >
+          <div class="mt-20 p-9 ">
+            <h1 class="text-3xl font-bold">Home and</h1>
+            <h1 class="text-3xl font-bold">Outdoor</h1>
+          <button class="bg-white py-3 px-5 rounded mt-3">Source Now</button>
+          </div>
+        </div>
+        </div>
+        </div>
+      <!-- </div> -->
+
     </div>
-</body>
+  </body>
 </html>
